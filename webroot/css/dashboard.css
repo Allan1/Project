@@ -1,0 +1,160 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  background-color: #ECF0F5;
+  padding-top: 50px;
+}
+/*
+.main div[class^="col-"]{
+  height: 100%;
+}*/
+
+.main .box {
+  /*position: relative;*/
+  background-color: white;
+  padding: 10px;
+  border-radius: 3px;
+  background: #FFF none repeat scroll 0% 0%;
+  border-top: 3px solid #D2D6DE;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.main .box h1,
+.main .box h2,
+.main .box h3,
+.main .box h4,
+.main .box h5{
+  margin-top: 10px;
+}
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: block;
+  /*background-color: #222D32;*/
+  /*background-color: #2C5162;*/
+  background-color: #314A56;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    /*background-color: #f5f5f5;*/
+    border-right: 1px solid #eee;
+  }
+}
+#results ul{
+  /*background-color: rgba(39, 83, 120, 0.6);*/
+  background-color: #3E5560;
+  color: whitesmoke;
+  list-style: none;
+}
+#results li > a {
+    color: whitesmoke;
+    padding: 12px 5px 12px 15px;
+    display: block;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+}
+#results li:hover > a, 
+#results li:active > a, 
+#results li.active > a{
+    color: #FFF;
+    background: #2C424D none repeat scroll 0% 0%;
+    border-left-color: #3C8DBC;
+}
+
+#results span:nth-child(2){
+  color: rgba(239, 239, 239, 0.68);
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+.view > .box > h3{
+  display: inline;
+}
+.view > .box > .btn-group{
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
