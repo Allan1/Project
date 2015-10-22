@@ -10,7 +10,6 @@
             echo $this->Form->input('password',['class'=>'form-control','label'=> $PT_LABELS['password']]);
             echo $this->Form->input('role',['class'=>'form-control','label'=> $PT_LABELS['role']]);
             echo $this->Form->input('isActive',['class'=>'form-control','label'=> $PT_LABELS['isActive']]);
-            echo $this->Form->input('token',['class'=>'form-control','label'=> $PT_LABELS['token']]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Enviar')) ?>
