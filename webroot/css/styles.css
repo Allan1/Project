@@ -110,7 +110,7 @@ input[type="checkbox"].form-control{
 	height: inherit;
 }
 #navbar ul:first-child{
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	/*font-family: Montserrat;*/
 	/*font-weight: lighter;*/
 }
@@ -140,22 +140,22 @@ input[type="checkbox"].form-control{
 	padding-bottom: 5px;
 }
 #navbar > ul > li > a{
-	border-bottom: 3px solid white;
+	/*border-bottom: 3px solid white;*/
 }
 #navbar > ul > li > a:focus{
-	background-color: white;
+	/*background-color: white;*/
 } 
 #navbar > ul > li > a:hover, 
 #navbar > ul > li.active > a,
 #navbar > ul > li.open > a{
-	border-bottom: 3px solid lightblue;
-	background-color: white;
+	/*border-bottom: 3px solid lightblue;*/
+	/*background-color: white;*/
 }
 .navbar {
 	/*box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.176);*/
-	border-bottom: 1px solid rgba(0, 0, 0, 0.176);
+	/*border-bottom: 1px solid rgba(0, 0, 0, 0.176);*/
 	background-color: white;
-
+	/*background-color: rgb(61,132,171);*/
 }
 
 .login-register form{
